@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, sans-serif;
+}
+
+.section-wrapper {
+    background-color: #2D25A0;
+}
+
+
+.banner {
+    margin: 0 auto;
+    width: 1170px;
+    display: flex;
+}
+
+.banner-text {
+    width: 50%;
+
+}
+
+.banner-image {
+    width: 50%;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+.banner-text h1 {
+    font-size: 64px;
+    color: white;
+    line-height: 80px;
+    height: 230px;
+    width: 486px;
+}
+
+.banner-text button {
+    padding: 10px 24px;
+    width: 164px;
+    height: 44px;
+    background: #E02C6D;
+    color: white;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+button span {
+    height: 24px;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+/* style card */
+
+.card-row-wrapper {
+    margin: 0 auto;
+    width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    margin-top: 70px;
+}
+
+.card {
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+.card-image {
+    text-align: center;
+}
+
+.card-image img {
+    width: 300px;
+    height: 256px;
+}
+
+.card-text {
+    width: 300px;
+    height: 154px;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+}
+
+.football-icon{
+    margin-top: 158px;
+}
+
+.football-icon img {
+    width: 483px;
+    height: 110px;
+}
+.social-icon img{
+    width: 32px;
+    height: 32px;
+}
+.copyright{
+    margin-bottom: 35px;
+}
+
+/* make responsive */
+
+@media only screen and (max-width: 575px){
+    .banner{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+ 
+   
+    .card-row-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+    .banner{
+        display: block;
+    }
+    
+    .card-row-wrapper{
+        width: 50%;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+}
